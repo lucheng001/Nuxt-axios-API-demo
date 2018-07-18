@@ -2,7 +2,7 @@ import axios from 'axios'
 
 const LOGIN_URL = 'http://127.0.0.1:8000/api-token-auth/'
 
-export function login (context, creds) {
+export function login_api (context, creds) {
   console.log(creds)
   axios({
     method: 'post',

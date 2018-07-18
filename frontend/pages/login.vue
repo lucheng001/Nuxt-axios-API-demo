@@ -12,7 +12,7 @@
 </template>
 
 <script>
-  import {login} from '../api/login'
+  import {login_api} from '../api/login'
 
   export default {
     data() {
@@ -29,7 +29,7 @@
           username: this.formUsername,
           password: this.formPassword
         }
-        login(this, auth_data, '/')
+        login_api(this, auth_data)
 //        try {
 //          await this.$store.dispatch('login', auth_data)
 //        } catch (e) {
